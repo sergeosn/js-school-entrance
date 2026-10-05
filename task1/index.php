@@ -7,10 +7,10 @@ function mySort($a, $b)
 }
 
 /**
- * Создает матрицу размером n * n и заполняет ее по спирали
+ * Creates an n * n matrix and fills it in a spiral
  *
- * @param int {Number} n - размерность матрицы
- * @returns array {Number[n][n]} - n * n - матрица, заполненная по спирали
+ * @param int {Number} n - matrix dimension
+ * @returns array {Number[n][n]} - n * n matrix filled in a spiral
  */
 function fillSpiralMatrix($n)
 {

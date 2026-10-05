@@ -1,17 +1,17 @@
-# Задание 2. Одинаковые элементы
+# Task 2. Identical elements
 
-Есть упорядоченный массив уникальных чисел и массив произвольных
-(необязательно уникальных) чисел произвольной длины. 
+There is a sorted array of unique numbers and an array of arbitrary
+(not necessarily unique) numbers of arbitrary length.
 
-Нужно написать функцию, которая возвращает `true`, если массивы состоят из
-одинакового числа одних и тех же элементов (порядок может отличаться),
-и `false` --  в противном случае.
+Write a function that returns `true` if the arrays consist of
+the same number of the same elements (the order may differ),
+and `false` otherwise.
 
 
-## Например:
+## For example:
 
-Первый массив: `[11, 22, 48, 54]`
+First array: `[11, 22, 48, 54]`
 
-Второй массив: `[11, 48, 54, 22]` -> `true`
+Second array: `[11, 48, 54, 22]` -> `true`
 
-Второй массив: `[11, 12, 48, 54]` -> `false`
+Second array: `[11, 12, 48, 54]` -> `false`

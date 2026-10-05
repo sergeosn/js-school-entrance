@@ -1,11 +1,11 @@
-# Задание 1. Спиральная Матрица
+# Task 1. Spiral Matrix
 
-Напишите функцию которая возвращает таблицу размером `n` x `n`, заполненную числами от
-1 до n<sup>2</sup> по спирали, выходящей из левого верхнего угла и закрученной по часовой стрелке.
+Write a function that returns an `n` x `n` table filled with numbers from
+1 to n<sup>2</sup> in a spiral that starts in the top-left corner and turns clockwise.
 
-## Например
+## For example
 
-Для `n` = `5`:
+For `n` = `5`:
 
 ```json
 [

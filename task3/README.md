@@ -1,13 +1,13 @@
-# Задание 3. Реализовать шаблон проектирования `Publish-Subscribe`.
+# Task 3. Implement the `Publish-Subscribe` design pattern.
 
-Необходимо создать класс Emitter, реализующий шаблон `Publish-Subscribe`, и содержащий
-два метода:
+Create an Emitter class that implements the `Publish-Subscribe` pattern and has
+two methods:
 
-  * `on(event, handler)` - связывает обработчик `handler` с событием `event`
-  * `emit(event, data)` - генерирует событие `event`, вызывает все обработчики, 
-  связанные с этим событием (если такие есть) и передает им в качестве аргумента `data`
+  * `on(event, handler)` - binds the `handler` to the `event`
+  * `emit(event, data)` - emits the `event`, calls all handlers bound
+  to that event (if any) and passes `data` to them as an argument
 
-## Например:
+## For example:
 
 ```php
 

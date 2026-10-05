@@ -5,19 +5,19 @@ class Emitter
     private $handlers;
 
     /**
-     * Создает экземпляр класса Emitter.
+     * Creates an instance of the Emitter class.
      * @memberof Emitter
      */
-    public function constructor()
+    public function __construct()
     {
         $this->handlers = [];
     }
 
     /**
-     * связывает обработчик с событием
+     * Binds a handler to an event
      *
-     * @param string event - событие
-     * @param Handler handler - обработчик
+     * @param string event - the event
+     * @param Handler handler - the handler
      */
     public function on($event, $handler)
     {
@@ -28,8 +28,8 @@ class Emitter
     }
 
     /**
-     * Генерирует событие -- вызывает все обработчики, связанные с событием и
-     *                       передает им аргумент data
+     * Emits an event -- calls all handlers bound to the event and
+     *                   passes them the data argument
      *
      * @param string event
      * @param mixed data

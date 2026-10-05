@@ -1,104 +1,104 @@
-# Вступительные Задания PDFfiller JS-React-School
+# PDFfiller JS-React-School Entrance Tasks
 
-## Всем привет. 
+## Hello everyone.
 
-Данный репозиторий служит шаблоном для Ваших решений вступительных заданий
-в школу JS-React-разработчиков.
+This repository serves as a template for your solutions to the entrance tasks
+for the JS-React developer school.
 
-Для решения заданий Вам понадобиться установить на Вашем компьютере следующее программное обеспечение:
+To complete the tasks, you will need to install the following software on your computer:
    1. `git`
-   1. `git bash` (*для Windows-пользователей*)
-   1. `php`, версии 7.1 или выше (рекомендовано 7.2)
-   1. Редактор кода или интегрированная среда разработки
+   1. `git bash` (*for Windows users*)
+   1. `php`, version 7.1 or higher (7.2 recommended)
+   1. A code editor or an integrated development environment
 
 
-Условия вступительных заданий Вы можете прочесть в соотвествующих `README`-файлах:
- - **Задание 1**. [Спиральная матрица](https://github.com/pdffiller/react-school-entrants-tasks-php/blob/master/task-1/README.md)
- - **Задание 2**. [Одинаковые элементы](https://github.com/pdffiller/react-school-entrants-tasks-php/blob/master/task-2/README.md)
- - **Задание 3**. [Реализовать шаблон проектирования `Publish-Subscribe`](https://github.com/pdffiller/react-school-entrants-tasks-php/blob/master/task-3/README.md)
+You can read the task descriptions in the corresponding `README` files:
+ - **Task 1**. [Spiral matrix](https://github.com/pdffiller/react-school-entrants-tasks-php/blob/master/task-1/README.md)
+ - **Task 2**. [Identical elements](https://github.com/pdffiller/react-school-entrants-tasks-php/blob/master/task-2/README.md)
+ - **Task 3**. [Implement the `Publish-Subscribe` design pattern](https://github.com/pdffiller/react-school-entrants-tasks-php/blob/master/task-3/README.md)
 
 
-## Как выполнять задания
+## How to complete the tasks
 
-Все инструкции в данном разделе расчитаны на то, что задания будут выполнятья под операционными системами `Linux`, `MacOS` или `Windows 10` (с `git bash` в качестве командной строки).
+All instructions in this section assume that the tasks will be completed on `Linux`, `MacOS` or `Windows 10` (with `git bash` as the command line).
 
-### 1. Скопируйте проект
+### 1. Copy the project
 
-Существует два способа скопировать проект:
- - ответвиться от данного репозитория (fork)
- - создать новый репозиторий, к-й инициализировать кодом из этого
+There are two ways to copy the project:
+ - fork this repository
+ - create a new repository and initialize it with the code from this one
 
-Мы **НАСТОЯТЕЛЬНО ПРОСИМ** не делать форки, т.к. это будет спойлером решений для других желающих решить вступительные задачи.
+We **STRONGLY ASK** you not to fork, because that would spoil the solutions for others who want to solve the entrance tasks.
 
-Для копирования репозитория выполните следующие шаги:
+To copy the repository, follow these steps:
 
-  1. [создайте новый репозиторий на github](https://github.com/new) с именем `<your-name>-tasks`
-  1. склонируйте данный репозиторий на Ваш компьютер:
+  1. [create a new repository on github](https://github.com/new) named `<your-name>-tasks`
+  1. clone this repository to your computer:
       ```shell
       git clone git@github.com:pdffiller/react-school-entrants-tasks-php.git school-tasks
       cd school-tasks
       ```
-  1. скопируйте url Вашего репозитория, созданного в п. 1.
+  1. copy the url of the repository you created in step 1.
 
       ![copy git url](https://help.github.com/assets/images/help/repository/remotes-url.png)
   
-  1. переиницилизируйте локальный git-репозиторий:
+  1. reinitialize the local git repository:
       ```shell
       rm -rf .git
       git init
-      git remote add origin <your-repository-url> # вставьте скопированную ссылку
+      git remote add origin <your-repository-url> # paste the copied link
       ```
   
-  1. Запуште код данного репозитория в Ваш репозиторий на `github`:
+  1. Push the code of this repository to your repository on `github`:
       ```shell
       git add .
       git commit -m "Initial commit"
       git push origin master
       ```
 
-### 2. Установите зависимости проекта
+### 2. Install the project dependencies
 
-Просто выполните команду:
+Just run the command:
 
 ```shell
 make install
 ```
 
-### 3. Напишите решение заданий
+### 3. Write your solutions
 
-Откройте проект в Вашем редакторе кода (или интегрированной среде разработки), перейдите в папку задачи (`./task1`, `./task2` или `./task3`), и внесите нужные изменения в файл `index.php`.
+Open the project in your code editor (or integrated development environment), go to the task folder (`./task1`, `./task2` or `./task3`), and make the necessary changes to the `index.php` file.
 
-Пожалуйста, примите во внимания спецификацию функций/методов, которыми сопровожден код шаблона решения задачи.
+Please take into account the function/method specifications that accompany the code of the solution template.
 
-Так, например, шаблон для решения задачи 1 выглядит так:
+For example, the template for task 1 looks like this:
 ```php
 /**
- * Создает матрицу размером n * n и заполняет ее по спирали
+ * Creates an n * n matrix and fills it in a spiral
  *
- * @param int {Number} n - размерность матрицы
- * @returns array {Number[n][n]} - n * n - матрица, заполненная по спирали
+ * @param int {Number} n - matrix dimension
+ * @returns array {Number[n][n]} - n * n matrix filled in a spiral
  */
 function fillSpiralMatrix($n)
 {
     $result = [];
 
-    // Ваш код
+    // Your code
 
     return $result;
 }
 
 ```
 
-Спецификация означает, что функция `fillSpiralMatrix` принимает один числовой аргумент `n` и возвращает квадратную числовую матрицу размером `n` x `n`.
+The specification means that the `fillSpiralMatrix` function takes one numeric argument `n` and returns a square numeric matrix of size `n` x `n`.
 
 
-### 3. Запустите тесты
+### 4. Run the tests
 
 ```shell
-make test-1 # или test-2, test-3 соответственно
+make test-1 # or test-2, test-3 respectively
 ```
 
-Если задача решена правильно, то Вы увидите примерно вот такой вот результат:
+If the task is solved correctly, you will see a result roughly like this:
 
 ```
 php vendor/bin/codecept run unit task1
@@ -120,21 +120,21 @@ Time: 711 ms, Memory: 116.00MB
 OK (6 tests, 6 assertions)
 ```
 
-## 4. Примите изменения и отправьте их на `github`
+### 5. Commit your changes and push them to `github`
 
-Как минимум после решения каждой задачи отправьте решение на `github`, для этого выполните команду:
+At a minimum, push your solution to `github` after solving each task. To do this, run:
 
 ```shell
 git add .
-git commit -m "Task-1 solution" # или другое сообщение, которое описывает изменения
+git commit -m "Task-1 solution" # or another message describing the changes
 git push origin master
 ```
 
-## 5. Отправьте решение в `PDFfiller`
+### 6. Send your solution to `PDFfiller`
 
-После того, как Вы решили все задачи, пожалуйста отправьте ссылку на страницу Вашего репозитория в `PDFfiller`.
+Once you have solved all the tasks, please send a link to your repository page to `PDFfiller`.
 
-Перед отправкой убедитесь, что Вы все отправили на `github`, и что все тесты проходят, для чего:
+Before sending, make sure that you have pushed everything to `github` and that all tests pass:
 
 ```shell
 cd ~/
@@ -144,9 +144,9 @@ make install
 make test
 ```
 
-Если все тесты проходят отправьте ссыку на страницу Вашего репозитория на электронную почту:<br/>
+If all tests pass, send the link to your repository page by email:<br/>
 [js-school@pdffiller.com](mailto:js-school@pdffiller.com?subject=JS%20School%20Entrants%20Tasks)
 
-## 6. Зарегистрируйте проблему
+### 7. Report a problem
 
-Если в ходе выполнения задачи что-то пошло не так, [зарегистрируйте проблему](https://github.com/pdffiller/react-school-entrants-tasks-php/issues/new) в данном репозитории на сайте github.
+If something goes wrong while completing the tasks, [report an issue](https://github.com/pdffiller/react-school-entrants-tasks-php/issues/new) in this repository on github.

@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Проверяет состоят ли массивы arr1 и arr2 из одинакового
- * числа одних и тех же элементов
+ * Checks whether arrays arr1 and arr2 consist of the same
+ * number of the same elements
  *
- * @param array arr1 - отсортированный по возрастанию
- *                          массив уникальных элементов
- * @param array arr2 - массив произвольной длинны произвольных чисел
+ * @param array arr1 - array of unique elements sorted
+ *                          in ascending order
+ * @param array arr2 - array of arbitrary numbers of arbitrary length
  * @returns {Boolean}
  */
 
